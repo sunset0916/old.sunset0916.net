@@ -7,10 +7,42 @@
     <title>サンセットのウェブサイト</title>
 </head>
 
+<style>
+    h1 {
+        font-size: 36px;
+        font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+        line-height: 1.3;
+    }
+    h2 {
+        font-size: 24px;
+        font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+        line-height: 1.3;
+    }
+    @media (min-width: 1200px) {
+        h1 {
+            font-size: 3.6rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        body{
+        line-height: 2;
+        }
+        h1{
+            font-size: 2.4rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
 <body style="-webkit-text-size-adjust: 100%;">
     <div style="margin-left: 5%; margin-right: 5%; display: flex; flex-direction: column; min-height: 100vh;">
         <header>
-            <h1 style="text-align: center; margin: 0.3em;font-size: 36px; font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429)); line-height: 1.3;">サンセットのウェブサイト</h1>
+            <h1 style="text-align: center; margin: 0.3em;">サンセットのウェブサイト</h1>
             <p style="text-align: center; margin: 0.5em;">
                 <a href="/">TOP</a> 
                 <a href="/about">About</a> 
