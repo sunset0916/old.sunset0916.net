@@ -7,11 +7,41 @@
 </head>
 
 <style>
-    html,body {
-        text-size-adjust: none;
-        -webkit-text-size-adjust: none;
-        -moz-text-size-adjust: none;
-        -ms-text-size-adjust: none;
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        font-size:1.6rem;
+        line-height: 2;
+    }
+    h1 {
+        font-size: 36px;
+        font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+        line-height: 1.3;
+    }
+    h2 {
+        font-size: 24px;
+        font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+        line-height: 1.3;
+    }
+    @media (min-width: 1200px) {
+        h1 {
+            font-size: 3.6rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        body{
+        line-height: 2;
+        }
+        h1{
+            font-size: 2.4rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
     }
 </style>
 
